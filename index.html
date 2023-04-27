@@ -1,26 +1,94 @@
 <html>
 
 <head>
+    <title>Astrology</title>
 
-    <title>Astrology Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <html lang="en">
 
-    <head>
-        <title>Astrology Website</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        @media only screen and (min-width: 768px) {
+            body {
+                background-color: black;
+                color: lightpink;
+            }
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+            .astrologytitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h2 {
+                font-size: 30;
+                margin-bottom: 33;
+                text-align: center;
+                text-shadow: 0px 0px 10px #DB3EB1, 0px 0px 20px #DB3EB1, 0px 0px 30px #DB3EB1, 0px 0px 40px #DB3EB1, 0px 0px 70px #DB3EB1, 0px 0px 80px #DB3EB1, 0px 0px 100px #DB3EB1, 0px 0px 150px #DB3EB1;
+            }
+
+
+
+            p {
+                font-size: 23;
+                margin-bottom: 33;
+                text-align: center;
+            }
+
+            .astrologybox {
+                background-color: #0ff;
+                border: none;
+                padding: none;
+                font-size: 20;
+                color: grey;
+                box-shadow: 0px 0px 10px #0ff;
+            }
+
+            .natal {
+                font-size: 20px;
+                color: skyblue;
+
+            }
+
+            h2 {
+                color: aqua;
+            }
+
+            .compatability h2 {
+                color: lavender;
+
+            }
+
+            .compatability {
+                font-size: 20px;
+            }
+
+            .synastry {
+                font-size: 20;
+                color: mediumvioletred;
+            }
+
+            .synastry h2 {
+                font-size: 35px;
+                color: red;
+
+            }
+
+            .personality h2 {
+                color: lavenderblush;
+            }
+
+
+
+        }
+
+    </style>
+</head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Astrology Website</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Astrology Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,268 +98,87 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#horoscopes">Horoscopes</a>
+                    <a class="nav-link" href="#about">Readings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#socials">Socials</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <div class="astrologytitle">
+        <h1>Astrology</h1>
+        <p>There's more to you, astrologically. </p>
+        <ul> <a href="#natal" class="astrologybox"> Natal Chart</a>
+            <ul />
 
-    <header class="jumbotron">
-        <h1 class="display-4"> Astrology </h1>
-        <p class="lead">Everything you need to know aout your sign, and more!</p>
+            <ul> <a href="#compatability" class="astrologybox"> Compatability</a>
+                <ul />
+                <ul> <a href="#synastry" class="astrologybox"> Synastry</a>
+                    <ul />
+                    <ul> <a href="#personality" class="astrologybox"> Personality</a>
+                        <ul />
 
 
-        <a class="btn btn-primary btn-lg" href="#birthchart" role="button">Calculate your Natal Chart! </a>
-    </header>
 
 
-    <section id="horoscopes" class="container">
-        <h2>Astrology Topics</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="aries.jpg" alt="Natal Chart">
-                    <div class="card-body">
-                        <h5 class="card-title">Natal Chart</h5>
-                        <p class="card-text">The "multiple signs" that make up your chart depend on where and when you were born, and how the planets were positioned at that time. All the planets ranging from the Sun to Neptune are given in the birth chart with a corresponding zodiac sign.
+    </div>
 
-                            .</p>
+    <section id="natal" class=astrologyliststyle>
 
-                    </div>
-                </div>
+        <div class="natal">
+            <h2> Natal Chart</h2>
+            <p>
+            <ul> The "multiple signs" that make up your chart depend on where and when you were born, and how all the planets were positioned at that given time. All the planets ranging from the Sun to Neptune are given in the birth chart with a corresponding zodiac sign. This is an example of what a Natal Chart looks like.</ul>
+            <ul> <img src="week3.html/birthchartphoto.jpeg"> </ul>
+            <ul> You can even calculate your own birth chart that will not only tell you all the different signs that make up your chart, but an explanation to all of them as well.</ul>
+            <ul> A personal favorite website to calcuate natal charts is <a href="https://horoscopes.astro-seek.com/birth-chart-horoscope-onlinehere">here.</a> This website seems to be profoundly accurate and gives you a great idea and perception on oneself, astrologically. </ul>
+
+
+        </div>
+
+
+
+
+        <section id="compatability" class=astrologyliststyle>
+            <div class="compatability">
+                <h2> Compatability</h2>
+                <p>
+                <ul> Some people know astrology for their compatability aspect. Some astrological signs are said to go better with each other than others. Every sign has an opposite sign, which is sometimes deemed as their best match. </ul>
+
+                <ul> Essentially, their opposite sign are very similar and very different in the sense that they make up what the other may lack.They posses every quality needed to create perfect union and completion. </ul>
+
+                <ul> Of course, don't not engage in relationships with someone if you're sign isn't compatible. Astrology is vague and broad for a reason. But some other signs go better if they are in the same element.Like fire and fire (Aries and Sagiitarius) or (Geminis and Libras) both are air signs.</ul>
+
+
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="taurus.jpg" alt="Compatability">
-                    <div class="card-body">
-                        <h5 class="card-title">Compatability</h5>
-                        <p class="card-text">Some people know astrology for their compatability aspect. Some astrological signs are said to go better with each other than others. Every sign has an opposite sign, which is sometimes deemed as their best match..</p>
+            <section id="synastry" class=astrologyliststyle>
+                <div class=" synastry">
+                    <h2> Synastry
+                    </h2>
 
-                    </div>
+                    <p>
+                    <ul>Did you know that with the information from your Natal Chart, and your significant other, you can combine your charts 'side by side' to receive the ultimate compatbility of both of your charts. </ul>
+                    <ul> You can find these out through the above sights. On Astro-Seek they have a menu at the top displaying "Love Compatability" where you should find the calculator to determine your astrological compatability.The Synastry Chart will give you more in depth reasonings on why or why not you two are not compatible astrologically.
+                    </ul>
+
+                    <section id="personality" class=Personality>
+                        <div class="personality">
+                            <h2> Personality</h2>
+
+
+                        </div>
+                    </section>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-
-                    <style>
-                        body {
-
-                            background-color: lavenderblush;
-
-                        }
-
-
-                        h2 {
-
-                            color: deeppink;
-                            font-size: 32;
-                        }
-
-                        p {
-                            color: mediumpurple;
-                            font-size: 14pt;
-
-                        }
-
-                        h1 {
-                            color: deeppink;
-                            font-size: 32pt;
-                            font-style: italic;
-                            text-align: center;
-                            font-family:
-                        }
-
-
-                        a {
-                            color: gold
-                        }
-
-                        li {
-                            color: hotpink
-                        }
-
-                        .astrologyliststyle {
-                            background-color: lavender
-                        }
-
-                        .elementsstyle {
-                            background-color: lavender
-                        }
-
-                        .websitestyle {
-                            background-color: lavender
-                        }
-
-
-                        .natalstyle {
-                            background-color: lavender
-                        }
-
-
-                        li {
-                            font-size: 14pt;
-                        }
-
-
-                        section2 {
-
-                            background-color: lightcyan
-                        }
-
-                    </style>
-
-                    </head>
-
-
-
-                    <body>
-
-
-                        <h1> Astrology </h1>
-                        <hr>
-                        <ul>
-                            <li> <a href="#Astrology Signs List">List of Astrology Signs </a> </li>
-
-                            <li> <a href="#Elements">Elements</a> </li>
-                            <li> <a href="#Websites for Birth Chart">Websites for Birth Charts</a> </li>
-                            <li> <a href="#Natal Charts">Natal Charts</a> </li>
-                        </ul>
-
-                        <img src="week3.html/zodiacimage.jpeg">
-                        <hr>
-
-
-
-
-
-                        <h1> <a name=#List List of Astrology signs> </a> </h1>
-
-
-                        <h2>
-                            <nav> Horoscopes</nav>
-                        </h2>
-
-
-                        <section id="Astrology Signs List" class=astrologyliststyle>
-                            <ol>
-
-
-                                <li> Capricorn</li>
-                                <li> Taurus</li>
-                                <li> Virgo</li>
-                                <li> Pisces</li>
-                                <li>Scorpio</li>
-                                <li>Cancer</li>
-                                <li>Aries</li>
-                                <li> Leo</li>
-                                <li>Saggitarius</li>
-                                <li>Libra</li>
-                                <li> Aquarius</li>
-                                <li> Gemini</li>
-                            </ol>
-                        </section>
-
-
-
-                        <hr>
-
-                        <h2> Elements </h2>
-                        <section id="Elements" class=elementsstyle>
-                            <p> There are four elements in total. </p>
-                            <ol>
-                                <li> Earth</li>
-                                <li> Water</li>
-                                <li> Fire</li>
-                                <li> Air</li>
-                            </ol>
-                        </section>
-
-
-
-                        <section>
-                            <p> Everyone has multiple signs making up their birth chart, or as astrolgers call it, their <b> Natal Chart.</b> </p>
-
-                            <p> You can find out your Natal Chart through numerous websites that offer it. My <i> personal favorite</i> is Astro-Seek. You can find their website
-                                <a href="https://horoscopes.astro-seek.com/birth-chart-horoscope-onlinehere">here.</a>
-                            </p>
-                        </section>
-
-
-
-
-                        <section id="Websites for Birth Chart" class=websitestyle>
-                            <p> A couple other really good websites are </p>
-                            <ul>
-                                <li> <a href="https://cafeastrology.com/free-natal-chart-report.html">Cafe Astrology </a> </li>
-                                <li> <a href="https://www.astrology.com/birth-chart/"> Astrology </a> </li>
-                                <li> <a href="https://www.costarastrology.com/natal-chart/"> CoStar </a> </li>
-                                <li> <a href="  https://chart.chaninicholas.com/"> CHANI </a> </li>
-                            </ul>
-                        </section>
-
-
-
-
-                        <h2> Natal Chart</h2>
-
-                        <section id="Natal Charts" class=natalstyle>
-                            <hr>
-                            <p>The "multiple signs" that make up your chart depend on where and when you were born, and how the planets were positioned at that time. </p>
-                            <p> All the planets ranging from the Sun to Neptune are given in the birth chart with a corresponding zodiac sign. </p>
-                            <hr>
-
-
-
-                            <p> This is an example of what a Natal Chart looks like. </p>
-                            <ol>
-                                <img src="week3.html/birthchartphoto.jpeg">
-                            </ol>
-                        </section>
-
-
-
-                        <h2> Compatability </h2>
-
-                        <p> Some people know astrology for their compatability aspect. Some astrological signs are said to go better with each other than others. Every sign has an opposite sign, which is sometimes deemed as their best match.
-
-                        <p> Essentially, their opposite sign are very similar and very different in the sense that they make up what the other may lack.They posses every quality needed to create perfect union and completion. Of course, don't not engage in relationships with someone if you're sign isn't compatible. Astrology is vague and broad for a reason. But some other signs go better if they are in the same element. </p>
-
-                        <p> Like fire and fire (Aries and Sagiitarius) or (Geminis and Libras) both are air signs. </p>
-
-
-                        <section2>
-                            <h2> The opposite signs of each zodiac are the following:</h2>
-
-
-
-                            <ul>
-                                <li> Aries- Libra</li>
-                                <li> Taurus- Scorpio </li>
-                                <li> Gemini- Sagitarius</li>
-                                <li> Cancer- Capricorn</li>
-                                <li> Aquarius- Leo</li>
-                                <li> Pisces- Virgo</li>
-                            </ul>
-
-                            <p> And the same goes for their opposites of course. </p>
-
-                        </section2>
-
-
-                        <h2> Synastry Charts</h2>
-
-                        <p> Did you know that with the information from your Natal Chart, and your significant other, you can combine your charts 'side by side' to receive the ultimate compatbility of both of your charts. You can find these out through the above sights. On Astro-Seek they have a menu at the top displaying "Love Compatability" where you should find the calculator to determine your astrological compatability. </p>
-
-                        <p> The Synastry Chart will give you more in depth reasonings on why or why not you two are not compatible astrologically. </p>
-
-
-                    </body>
+            </section>
+        </section>
+    </section>
+    </ul>
+    </ul>
+    </ul>
+
+    </div>
+</body>
 
 </html>
