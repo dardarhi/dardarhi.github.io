@@ -28,11 +28,7 @@
             text-shadow: 0px 0px 10px #DB3EB1, 0px 0px 20px #DB3EB1, 0px 0px 30px #DB3EB1, 0px 0px 40px #DB3EB1, 0px 0px 70px #DB3EB1, 0px 0px 80px #DB3EB1, 0px 0px 100px #DB3EB1, 0px 0px 150px #DB3EB1;
         }
 
-        main {
-            display: flex;
-            width: 2px align-items: center;
-            max-width: auto 0;
-        }
+
 
         p {
             font-size: 23;
@@ -58,6 +54,11 @@
             flex: 1;
 
 
+
+        }
+
+        hr {
+            border: pink;
         }
 
 
@@ -75,23 +76,24 @@
             font-size: 20px;
             list-style-type: none;
             margin: 20px;
-            padding: 0;
-
             flex: 1;
+
+
         }
 
         .synastry {
             font-size: 20;
-            color: mediumvioletred;
+            color: aqua;
             list-style-type: none;
             margin: 20px;
             padding: 0;
             flex: 1;
+
         }
 
         .synastry h2 {
             font-size: 35px;
-            color: red;
+            color: lavender;
 
         }
 
@@ -109,7 +111,13 @@
 
 
             font-size: 20px;
-            color: aliceblue
+            color: aqua;
+            flex: 1;
+
+        }
+
+        article {
+            flex: 1;
         }
 
         hr {
@@ -119,7 +127,6 @@
         .compatabilitya {
             max-width: 1200px;
             margin: 0 auto;
-            border: 2px dashed aqua;
             text-align: center;
             margin: 50px 20px 50px 20px;
 
@@ -129,16 +136,13 @@
         .natala {
             max-width: 1200px;
             margin: 0 auto;
-            border: 2px dashed pink;
             text-align: center;
             margin: 50px 20px 50px 20px;
-
         }
 
         .personalitya {
             max-width: 1200px;
             margin: 0 auto;
-            border: 2px dashed lavender;
             text-align: center;
             margin: 50px 20px 50px 20px;
 
@@ -148,22 +152,77 @@
         .synastrya {
             max-width: 1200px;
             margin: 0 auto;
-            border: 2px dashed red;
             text-align: center;
             margin: 50px 20px 50px 20px;
 
+
+
         }
+
+        body {
+            background-color: black;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 0px 0px 10px #DB3EB1, 0px 0px 20px #DB3EB1, 0px 0px 30px #DB3EB1, 0px 0px 40px #DB3EB1, 0px 0px 70px #DB3EB1, 0px 0px 80px #DB3EB1, 0px 0px 100px #DB3EB1, 0px 0px 150px #DB3EB1;
+        }
+
+        p {
+            color: aqua;
+            font-size: 25px;
+        }
+
+        .readings {
+            color: pink;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .readings h1 {
+            color: pink;
+
+        }
+
+        .elements ul {
+            color: lavender;
+            font-size: 25px;
+
+        }
+
+        .elements h1 {
+            color: gold;
+            font-size: 30px;
+        }
+
+
 
         @media only screen and (min-width: 960px) {
-            .natala {
 
-                display: flex;
+
+            .personality {
                 text-align: center;
                 padding: 50px 0px;
+                display: flex;
+
             }
 
-        }
+            .natal {
+                text-align: center;
+                padding: 50px 0px;
+                display: flex;
 
+            }
+
+            .synastry {
+                text-align: center;
+                padding: 50px 0px;
+                display: flex;
+
+            }
         }
 
     </style>
@@ -171,7 +230,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Astrology Site</a>
+        <a class="navbar-brand" href="#">Astrology Guide</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -185,9 +244,7 @@
 
 
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="elementspg2.html">Contact</a>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -206,10 +263,11 @@
                         <ul />
 
 
-                        <main>
+
 
     </div>
     <hr>
+
     <section id="natal" class=astrologyliststyle>
         <article class="natala">
             <div class="natal">
@@ -279,7 +337,46 @@
     </ul>
 
     </div>
-    </main>
+    <div class="readings">
+        <h1> Readings
+        </h1>
+        <p> Did you know that the signs that tend to be the most compatabile are their exact opposites.
+        </p>
+        <ul>
+            <ul> Aries- Libra</ul>
+            <ul> Taurus- Scorpio </ul>
+            <ul> Gemini- Sagitarius</ul>
+            <ul> Cancer- Capricorn</ul>
+            <ul> Aquarius- Leo</ul>
+            <ul> Pisces- Virgo</ul>
+        </ul>
+
+
+        <div class="elements">
+            <h1> Elements </h1>
+
+
+            <p> There are four elements in total. </p>
+            <ol>
+                <ul> Earth: Capricorn, Virgo, Taurus</ul>
+                <ul> Water: Scorpio, Pisces, Cancer</ul>
+                <ul> Fire: Aries, Leo, Saggitarius</ul>
+                <ul> Air: Libra, Gemini, Aquarius</ul>
+            </ol>
+
+
+            <h1> Contact</h1>
+            <img src="social_fb.jpg">
+
+
+
+            <img src="social_tw.jpg">
+
+
+
+            <img src="social_yt.jpg">
+
+
 </body>
 
 </html>
